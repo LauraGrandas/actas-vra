@@ -1,4 +1,5 @@
 all_tags = {
+    "Any",
     "PDI",
     "Estructura Interna",
     "Ajustes Administrativos",

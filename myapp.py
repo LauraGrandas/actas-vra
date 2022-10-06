@@ -46,10 +46,9 @@ selectbox_vicerrectorias = st.sidebar.selectbox(
 with st.sidebar:
     etiqueta = st.radio(
         "Seleccione una etiqueta",
-        categorias.all_tags
+        categorias.all_tags, 
+        index = 0
     )
 
-#ya fuera del sidebar
-st.write(selectbox_nivel)
-st.write(selectbox_facultades)
-st.write(main.filtrar(selectbox_nivel,selectbox_facultades,selectbox_actores,etiqueta))
+df = pd.read_csv("dummy-actas.csv", header = 0)
+st.write(main.filtrar(df,selectbox_nivel,selectbox_facultades,selectbox_actores,etiqueta))
