@@ -2,7 +2,7 @@ all_tags = {
     "PDI",
     "Estructura Interna",
     "Ajustes Administrativos",
-    "semilleros",
+    "Semilleros",
     "Formación en investigación",
     "Promoción investigación",
     "Creación artistica",
@@ -29,12 +29,13 @@ all_tags = {
     "Administrativos",
     "Representación",
     "Deportes",
-    "cultura",
-    "iniciativas estudiantiles",
+    "Cultura",
+    "Iniciativas estudiantiles",
     "Bienestar"
 }
 
 all_vicerrectorias = {
+    "Any",
     "Rectoría",
     "Vicerrectoría de investigación y creación",
     "Vicerrectoría de Desarrollo y egresados",
@@ -91,17 +92,34 @@ within_vicerrectorias = {
     ]
 }
 
-all_actores = {
+all_actores = [
+    "Any",
     "Profesores",
     "Estudiantes",
     "Administrativos",
     "Egresados",
     "Otros empleados"
-}
+]
 
-all_niveles = {
+all_niveles = [
+    "Any",
     "Pregrado",
     "Posgrado",
-    "Educación continua"
-}
+    "Educación continua",
+]
 
+all_facultades = [
+    "Any",
+    "Economía", 
+    "Derecho", 
+    "Administración", 
+    "Ingenierías", 
+    "Medicina", 
+    "Artes y humanidades", 
+    "Arquitectura y Diseño", 
+    "Ciencias Sociales", 
+    "Educación", 
+    "Ciencias", 
+    "Gobierno", 
+    "Otras", 
+]
