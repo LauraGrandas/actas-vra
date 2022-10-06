@@ -50,5 +50,22 @@ with st.sidebar:
         index = 0
     )
 
-df = pd.read_csv("dummy-actas.csv", header = 0)
+df = pd.read_csv("dummy-actas2.csv", header = 0)
 st.write(main.filtrar(df,selectbox_nivel,selectbox_facultades,selectbox_actores,etiqueta))
+
+def convert_df(df):
+   return df.to_csv().encode('utf-8')
+
+csv = convert_df(df)
+
+st.download_button(
+   "Press to Download",
+   csv,
+   "file.csv",
+   "text/csv",
+   key='download-csv'
+)
+
+# ejemplo = main.filtrar(df,selectbox_nivel,selectbox_facultades,selectbox_actores,etiqueta)
+# listas_ejemplo = ejemplo['extracto'].tolist()
+# st.write(listas_ejemplo)
