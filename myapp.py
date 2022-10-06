@@ -15,28 +15,28 @@ st.write(
 
 
 # SELECTBOX Nivel Académico
-add_selectbox = st.sidebar.selectbox(
+selectbox_nivel = st.sidebar.selectbox(
     "Nivel académico",
     categorias.all_niveles,
     index= 0
 )
 
 # SELECTBOX Facultades
-add_selectbox = st.sidebar.selectbox(
+selectbox_facultades = st.sidebar.selectbox(
     "Facultades",
     categorias.all_facultades,
     index = 0
 )
 
 # SELECTBOX Actores
-add_selectbox = st.sidebar.selectbox(
+selectbox_actores = st.sidebar.selectbox(
     "Actores",
     categorias.all_actores,
     index = 0
 )
 
 # SELECTBOX Vicerrectorías
-add_selectbox = st.sidebar.selectbox(
+selectbox_vicerrectorias = st.sidebar.selectbox(
     "Vicerrectorías",
     categorias.all_vicerrectorias,
     index = 0
@@ -44,10 +44,12 @@ add_selectbox = st.sidebar.selectbox(
 
 # RADIO Todas las etiquetas
 with st.sidebar:
-    add_radio = st.radio(
+    etiqueta = st.radio(
         "Seleccione una etiqueta",
         categorias.all_tags
     )
 
 #ya fuera del sidebar
-st.write(main.objeto)
+st.write(selectbox_nivel)
+st.write(selectbox_facultades)
+st.write(main.filtrar(selectbox_nivel,selectbox_facultades,selectbox_actores,etiqueta))
