@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import categorias
+import main
 
 # create a header
 
@@ -49,9 +50,4 @@ with st.sidebar:
     )
 
 #ya fuera del sidebar
-df = pd.read_csv("dummy-actas.csv", header = 0)
-
-palabra = "Informe"
-df_extract = df[df['tag'].str.contains("Informe")]
-objeto = df_extract['extracto']#.to_list()
-st.write(objeto)
+st.write(main.objeto)
