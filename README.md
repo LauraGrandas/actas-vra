@@ -7,3 +7,8 @@ Cada documento de la carpeta actas contiene el acta correspondiente a un día de
 ### Contenidos de este repositorio:
 1. Etiquetas que se usan para clasificar los extractos de las actas. 
 2. 
+
+To run this repo locally in linux/mac use the following two lines on a terminal within the folder containing this repo: 
+
+chmod +x app-install.sh
+./app-install.sh
