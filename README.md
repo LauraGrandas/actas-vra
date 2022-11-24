@@ -1,5 +1,5 @@
 # actas-vra
-Clasificación por etiqutas de las actas del Consejo Académico de la Universidad de los Andes.
+Clasificación por etiquetas de las actas del Consejo Académico de la Universidad de los Andes.
 
 ### Descripción: 
 Cada documento de la carpeta actas contiene el acta correspondiente a un día de sesión del Consejo Académico de la Universidad de los Andes. Vamos a tomar unas etiquetas predeterminadas para extraer extractos de interés de estos documentos. Dos extractos idénticos pueden tener la misma etiqueta. 
@@ -13,3 +13,6 @@ To run this repo locally in linux/mac use the following two lines on a terminal 
 
 chmod +x app-install.sh
 ./app-install.sh
+
+If you are working from within the repository on your local machine, run the app using the following command from the local folder.
+streamlit run myapp.py
