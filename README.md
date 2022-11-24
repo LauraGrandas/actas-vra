@@ -15,4 +15,5 @@ chmod +x app-install.sh
 ./app-install.sh
 
 If you are working from within the repository on your local machine, run the app using the following command from the local folder.
+
 streamlit run myapp.py
