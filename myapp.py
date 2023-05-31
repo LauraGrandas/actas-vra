@@ -50,7 +50,7 @@ with st.sidebar:
         index = 0
     )
 
-df = pd.read_csv("dummy-actas2.csv", header = 0)
+df = pd.read_csv("Actas20230119.csv", header = 0)
 st.write(main.filtrar(df,selectbox_nivel,selectbox_facultades,selectbox_actores,etiqueta))
 
 def convert_df(df):
